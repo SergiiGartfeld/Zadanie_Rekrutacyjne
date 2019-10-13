@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Struktura węzła która składa się z podwęzłów.
+ */
 public class CompositeNode extends Node implements ICompositeNode {
     private List<INode> nodes;
 

@@ -19,7 +19,10 @@ public class Node implements INode{
     public String getRenderer() {
         return renderer;
     }
-
+    /**
+     * Jeśli węzeł jest Node (czyli jest węzłem końcowym) to zwraca tylko siebie.
+     * @return lista zawierająca jeden element którym jest ta instancja #this.
+     */
     @Override
     public List<INode> getNodes() {
         return Collections.singletonList(this);
