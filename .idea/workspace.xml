@@ -194,8 +194,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="279" />
-    <option name="y" value="119" />
+    <option name="x" value="653" />
+    <option name="y" value="108" />
     <option name="width" value="1242" />
     <option name="height" value="966" />
   </component>
@@ -272,7 +272,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570995030031" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570996746385" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -287,6 +288,62 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestTwoLevelStructure">
+    <configuration name="TestFlatStructure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZadRekr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.horus.rekrutacja.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.horus.rekrutacja.test" />
+      <option name="MAIN_CLASS_NAME" value="pl.horus.rekrutacja.test.TestFlatStructure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestThreeLevelStructure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZadRekr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.horus.rekrutacja.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.horus.rekrutacja.test" />
+      <option name="MAIN_CLASS_NAME" value="pl.horus.rekrutacja.test.TestThreeLevelStructure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTwoLevelStructure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZadRekr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.horus.rekrutacja.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.horus.rekrutacja.test" />
+      <option name="MAIN_CLASS_NAME" value="pl.horus.rekrutacja.test.TestTwoLevelStructure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestFlatStructure" />
+      <item itemvalue="JUnit.TestThreeLevelStructure" />
+      <item itemvalue="JUnit.TestTwoLevelStructure" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestTwoLevelStructure" />
+        <item itemvalue="JUnit.TestThreeLevelStructure" />
+        <item itemvalue="JUnit.TestFlatStructure" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
