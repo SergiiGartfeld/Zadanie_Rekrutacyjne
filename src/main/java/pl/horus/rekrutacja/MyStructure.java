@@ -10,7 +10,7 @@ public class MyStructure implements IMyStructure {
         nodes = new ArrayList<>();
     }
 
-   
+
 
     public INode findByCode(final String code) {
         return nodes.stream()
@@ -21,7 +21,7 @@ public class MyStructure implements IMyStructure {
 
     public INode findByRenderer(String renderer) {
         return nodes.stream()
-                .filter(c -> c.getCode().equals(renderer))
+                .filter(c -> c.getRenderer().equals(renderer))
                 .findFirst()
                 .orElseThrow(() -> new INodeNotFound("INode with code: " + renderer + " was not found."));
     }
