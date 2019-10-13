@@ -24,7 +24,7 @@ public class MyStructure implements IMyStructure {
 
     /**
      * Dla każdego z węzłów potomków każemy zwrócić jego i każdy z podwęzłów.
-     * @return stream węzłów i podwęzłów. 
+     * @return stream węzłów i podwęzłów.
      */
     private Stream<INode> getNodesStream() {
         return nodes.stream()
