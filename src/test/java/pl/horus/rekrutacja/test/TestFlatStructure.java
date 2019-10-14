@@ -5,7 +5,6 @@ import org.junit.Test;
 import pl.horus.rekrutacja.INode;
 import pl.horus.rekrutacja.INodeNotFound;
 import pl.horus.rekrutacja.MyStructure;
-import pl.horus.rekrutacja.Node;
 
 import java.util.ArrayList;
 import java.util.Arrays;
