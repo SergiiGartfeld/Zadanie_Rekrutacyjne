@@ -63,6 +63,6 @@ public class MyStructure implements IMyStructure, ICompositeNode, INode {
                 .flatMap(iNode -> iNode.getNodes().stream())
                 .collect(Collectors.toList());
         node.add(this);
-        return nodes;
+        return node;
     }
 }

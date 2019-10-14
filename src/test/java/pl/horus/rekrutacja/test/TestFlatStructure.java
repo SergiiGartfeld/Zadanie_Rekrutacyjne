@@ -15,29 +15,29 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 public class TestFlatStructure {
-    private static Node N1;
-    private static Node N2;
-    private static Node N3;
+    private static MyStructure N1;
+    private static MyStructure N2;
+    private static MyStructure N3;
 
     private MyStructure myStructure;
 
     @Before
     public void setup() {
-        N1 = new Node("c1", "r1");
-        N2 = new Node("c2", "r2");
-        N3 = new Node("c3", "r3");
+        N1 = new MyStructure("c1", "r1");
+        N2 = new MyStructure("c2", "r2");
+        N3 = new MyStructure("c3", "r3");
         List<INode> nodes = new ArrayList<>(Arrays.asList(
                 N1,
                 N2,
                 N3
         ));
 
-        myStructure = new MyStructure(nodes);
+        myStructure = new MyStructure("c4", "r4", nodes);
     }
 
     @Test
     public void countTest() {
-        assertThat(myStructure.count(), is(equalTo(3)));
+        assertThat(myStructure.count(), is(equalTo(4)));
     }
 
     @Test

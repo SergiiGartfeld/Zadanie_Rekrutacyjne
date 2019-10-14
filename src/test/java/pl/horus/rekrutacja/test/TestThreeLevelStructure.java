@@ -19,28 +19,28 @@ public class TestThreeLevelStructure {
 
     @Before
     public void setup() {
-        INode l1_c7 = new Node("l1, c7", "l1, r7");
+        INode l1_c7 = new MyStructure("l1, c7", "l1, r7");
 
-        INode l2_c1 = new Node("l2, c1", "l2, r1");
-        ICompositeNode l1_c6 = new CompositeNode("l1, c6", "l1, r6", new ArrayList<>(Collections.singletonList(l2_c1)));
+        INode l2_c1 = new MyStructure("l2, c1", "l2, r1");
+        ICompositeNode l1_c6 = new MyStructure("l1, c6", "l1, r6", new ArrayList<>(Collections.singletonList(l2_c1)));
 
-        INode l3_c6 = new Node("l3, c6", "l3, r6");
-        l3_c7 = new Node("l3, c7", "l3, r7");
+        INode l3_c6 = new MyStructure("l3, c6", "l3, r6");
+        l3_c7 = new MyStructure("l3, c7", "l3, r7");
 
-        l2_c2 = new CompositeNode("l2, c2", "l2, r2", new ArrayList<>(Arrays.asList(l3_c6, l3_c7)));
-        l2_c3 = new Node("l2, c3", "l2, r3");
+        l2_c2 = new MyStructure("l2, c2", "l2, r2", new ArrayList<>(Arrays.asList(l3_c6, l3_c7)));
+        l2_c3 = new MyStructure("l2, c3", "l2, r3");
 
-        INode l2_c4 = new Node("l2, c4", "l2, r4");
-        ICompositeNode l1_c5 = new CompositeNode("l1, c5", "l1, r5", new ArrayList<>(Arrays.asList(l2_c2, l2_c3, l2_c4)));
+        INode l2_c4 = new MyStructure("l2, c4", "l2, r4");
+        ICompositeNode l1_c5 = new MyStructure("l1, c5", "l1, r5", new ArrayList<>(Arrays.asList(l2_c2, l2_c3, l2_c4)));
 
         List<INode> nodes = new ArrayList<>(Arrays.asList(l1_c7, l1_c5, l1_c6));
 
-        myStructure = new MyStructure(nodes);
+        myStructure = new MyStructure("0, c0","0, r0",nodes);
     }
 
     @Test
     public void countTest() {
-        assertEquals(9, myStructure.count());
+        assertEquals(10, myStructure.count());
     }
 
     @Test

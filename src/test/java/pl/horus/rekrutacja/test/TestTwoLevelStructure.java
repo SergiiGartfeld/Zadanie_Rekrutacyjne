@@ -18,24 +18,24 @@ public class TestTwoLevelStructure {
 
     @Before
     public void setup() {
-        INode n5 = new Node("l1, c7", "l1, r7");
+        INode n5 = new MyStructure("l1, c7", "l1, r7");
 
-        INode n1 = new Node("l2, c1", "l2, r1");
-        cn2 = new CompositeNode("l1, c6", "l1, r6", new ArrayList<>(Collections.singletonList(n1)));
+        INode n1 = new MyStructure("l2, c1", "l2, r1");
+        cn2 = new MyStructure("l1, c6", "l1, r6", new ArrayList<>(Collections.singletonList(n1)));
 
-        INode n2 = new Node("l2, c2", "l2, r2");
-        n3 = new Node("l2, c3", "l2, r3");
-        INode n4 = new Node("l2, c4", "l2, r4");
-        ICompositeNode cn1 = new CompositeNode("l1, c5", "l1, r5", new ArrayList<>(Arrays.asList(n2, n3, n4)));
+        INode n2 = new MyStructure("l2, c2", "l2, r2");
+        n3 = new MyStructure("l2, c3", "l2, r3");
+        INode n4 = new MyStructure("l2, c4", "l2, r4");
+        ICompositeNode cn1 = new MyStructure("l1, c5", "l1, r5", new ArrayList<>(Arrays.asList(n2, n3, n4)));
 
         List<INode> nodes = new ArrayList<>(Arrays.asList(n5, cn1, cn2));
 
-        myStructure = new MyStructure(nodes);
+        myStructure = new MyStructure("0, c0","0, r0",nodes);
     }
 
     @Test
     public void countTest() {
-        assertEquals(7, myStructure.count());
+        assertEquals(8, myStructure.count());
     }
 
     @Test
